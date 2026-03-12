@@ -4,6 +4,7 @@ import Container from "../../components/layout/Container";
 import { portfolioData } from "../../data/portfolioData";
 import PortfolioModal from "../../components/modals/PortfolioModal";
 import { PlayCircle } from "lucide-react";
+import CommonHeader from "../../components/Header";
 
 const categories = [
   { label: "All", value: "all" },
@@ -31,31 +32,24 @@ export default function Portfolio() {
 
   return (
     <div className="bg-slate-50">
-      
       {/* HERO */}
-      <Section className="bg-secondary-dark text-center">
-        <Container>
-          <h1 className="text-2xl md:text-4xl lg:text-5xl font-bold text-primary-light mb-6">
-            Our Portfolio
-          </h1>
+      <CommonHeader
+        title="Our Portfolio"
+        subtitle="Explore our completed projects including Swimming Pools, Water Parks, Fountains, Landscapes, Resort Developments, Rain Dance installations, Kids Play Areas, and Theme Parks."
+        category="Our Work"
+        image="https://c4.wallpaperflare.com/wallpaper/136/332/45/summer-high-resolution-widescreen-wallpaper-preview.jpg"
+      />
 
-          <p className="text-primary-light/70 max-w-2xl mx-auto">
-            Explore our work in swimming pools, landscapes, construction,
-            resorts, and water feature projects. We take pride in creating
-            beautiful and sustainable environments.
-          </p>
-        </Container>
-      </Section>
-
-      {/* FILTER BUTTONS */}
-      <Section>
+      {/* FILTER + PORTFOLIO */}
+      <Section className="py-10 md:py-16">
         <Container>
-          <div className="flex flex-wrap justify-center gap-2 lg:gap-4 mb-12">
+          {/* FILTER BUTTONS */}
+          <div className="flex flex-wrap justify-center gap-2 md:gap-3 lg:gap-4 mb-6 md:mb-12">
             {categories.map((cat) => (
               <button
                 key={cat.value}
                 onClick={() => setActiveCategory(cat.value)}
-                className={`px-5 py-2 rounded-full text-sm font-medium transition cursor-pointer
+                className={`px-3 md:px-5 py-1.5 md:py-2 rounded-full text-xs md:text-sm font-medium transition cursor-pointer
                 ${
                   activeCategory === cat.value
                     ? "bg-primary-dark text-white"
@@ -68,29 +62,29 @@ export default function Portfolio() {
           </div>
 
           {/* PORTFOLIO GRID */}
-          <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-4 lg:gap-8">
+          <div className="grid grid-cols-2 md:grid-cols-2 lg:grid-cols-3 gap-3 md:gap-4 lg:gap-6">
             {filteredItems.map((item, index) => (
               <div
                 key={index}
                 onClick={() => setCurrentIndex(index)}
-                className="bg-white rounded-xl overflow-hidden shadow-lg hover:shadow-xl transition cursor-pointer"
+                className="group bg-white rounded-lg overflow-hidden shadow-md md:shadow-lg hover:shadow-xl transition cursor-pointer"
               >
                 {item.type === "image" ? (
                   <img
                     src={item.src}
                     alt="portfolio work"
-                    className="w-full h-64 object-cover hover:scale-105 transition"
+                    className="w-full h-36 md:h-56 lg:h-64 object-cover group-hover:scale-105 transition duration-500"
                   />
                 ) : (
                   <div className="relative">
                     <video
                       src={item.src}
-                      className="w-full h-64 object-cover"
+                      className="w-full h-36 md:h-56 lg:h-64 object-cover"
                     />
 
                     <PlayCircle
-                      size={40}
-                      className="absolute text-white top-3 right-3"
+                      size={36}
+                      className="absolute text-white top-2 right-2 md:top-3 md:right-3"
                     />
                   </div>
                 )}
@@ -107,7 +101,6 @@ export default function Portfolio() {
         setCurrentIndex={setCurrentIndex}
         onClose={() => setCurrentIndex(null)}
       />
-
     </div>
   );
 }

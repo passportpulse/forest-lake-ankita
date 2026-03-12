@@ -1,6 +1,4 @@
-import React from "react";
 import {
-  Waves,
   Mail,
   Phone,
   MapPin,
@@ -11,6 +9,8 @@ import {
 } from "lucide-react";
 import Container from "./layout/Container";
 import { NAV_LINKS } from "../constants/navigation";
+import logo from "../../public/logo.png";
+import { Link } from "react-router-dom";
 
 export default function Footer() {
   return (
@@ -21,9 +21,11 @@ export default function Footer() {
           {/* 1. Brand Section - Compacted spacing */}
           <div className="lg:col-span-4 flex flex-col gap-4">
             <div className="flex items-center gap-3 group">
-              <div className="shrink-0 p-2.5 bg-primary-light text-secondary-dark rounded-lg">
-                <Waves size={22} strokeWidth={2.5} />
-              </div>
+              <img
+                src={logo}
+                alt="Forest Lakes Logo"
+                className="h-12 w-auto object-contain"
+              />
               <div className="flex flex-col">
                 <h2 className="font-bold text-lg tracking-wider leading-none mb-1">
                   FOREST LAKES
@@ -115,13 +117,13 @@ export default function Footer() {
             <p className="text-xs text-primary-light/50 mb-5">
               Get a free quote for your next project.
             </p>
-            <button
-              href="/free-quote"
+            <Link
+              to="/free-quote"
               className="w-full flex items-center justify-center gap-2 py-3 bg-primary-light text-secondary-dark text-[10px] font-black uppercase tracking-widest rounded-lg hover:brightness-110 active:scale-[0.98] transition-all"
             >
               Request Quote
               <ArrowRight size={14} />
-            </button>
+            </Link>
           </div>
         </div>
 

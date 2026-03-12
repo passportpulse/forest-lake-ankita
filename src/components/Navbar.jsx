@@ -1,7 +1,8 @@
-import React, { useState, useEffect } from "react";
-import { Menu, X, Waves, ArrowRight } from "lucide-react";
+import { useState, useEffect } from "react";
+import { Menu, X, ArrowRight } from "lucide-react";
 import { NAV_LINKS } from "../constants/navigation"; // Import the separated menu
 import Container from "./layout/Container";
+import logo from "../../public/logo.png";
 
 export default function Navbar() {
   const [open, setOpen] = useState(false);
@@ -24,9 +25,12 @@ export default function Navbar() {
       <Container className="flex items-center justify-between ">
         {/* Logo Section */}
         <div className="flex items-center gap-4 group cursor-pointer">
-          <div className="p-2.5 bg-secondary-dark rounded-lg text-primary-light transition-transform duration-500 group-hover:scale-110">
-            <Waves size={22} strokeWidth={2} />
-          </div>
+          <img
+            src={logo}
+            alt="Forest Lakes Logo"
+            className="h-12 w-auto object-contain"
+          />
+
           <div className="flex flex-col border-l-2 border-secondary-dark/20 pl-4 py-1">
             <h1 className="text-lg lg:text-xl font-extrabold tracking-[0.15em] text-secondary-dark leading-none uppercase">
               FOREST LAKES

@@ -1,9 +1,19 @@
-import HomeHero from "./sections/HomeHero";
+import HeroSection from "./sections/HeroSection";
+import ServicesHighlights from "./sections//ServicesHighlights";
+import WhyChooseUs from "./sections//WhyChooseUs";
+import FeaturedProjects from "./sections//FeaturedProjects";
+import OurProcess from "./sections//OurProcess";
+import FinalCTA from "./sections//FinalCTA";
 
 export default function Home() {
   return (
     <>
-      <HomeHero />
+      <HeroSection />
+      <ServicesHighlights />
+      <WhyChooseUs />
+      <FeaturedProjects />
+      <OurProcess />
+      <FinalCTA />
     </>
   );
 }
