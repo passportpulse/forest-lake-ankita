@@ -12,15 +12,18 @@ import "swiper/css/effect-fade";
 
 export default function HeroSection() {
   const slides = [
-    "/hero.jpg",
-    "/hero2.jpg",
-    "/hero3.jpg",
+    "/hero5.jpg",
+     "/hero6.jpg",
+    // "/hero.jpg",
+    // "/hero2.jpg",
+    // "/hero3.jpg",
+    "/hero4.jpg",
   ];
 
   return (
     // Height: 80vh on mobile, 95vh on laptop
     <div className="relative h-[80vh] md:h-[95vh] w-full overflow-hidden bg-white">
-      
+
       {/* 1. Background Slider Container */}
       <div
         className="absolute inset-0 z-0 overflow-hidden"
