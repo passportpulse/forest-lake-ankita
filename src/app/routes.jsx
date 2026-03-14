@@ -7,6 +7,7 @@ import Contact from "../pages/contact/Contact";
 import Portfolio from "../pages/portfolio/Portfolio";
 import Service from "../pages/service/Service";
 import Quote from "../pages/quote/Quote";
+import Management from "../pages/management/Management";
 
 export const router = createBrowserRouter([
   {
@@ -23,6 +24,7 @@ export const router = createBrowserRouter([
       { path: "/portfolio", element: <Portfolio /> },
       { path: "/contact-us", element: <Contact /> },
       { path: "/free-quote", element: <Quote /> },
+      { path: "/management", element: <Management /> },
     ],
   },
 ]);

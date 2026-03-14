@@ -45,12 +45,12 @@ export default function Navbar() {
 
         {/* Desktop Menu */}
         <div className="hidden lg:flex items-center gap-2">
-          <ul className="flex items-center gap-1 mr-8">
+          <ul className="flex items-center gap-1 mr-5">
             {NAV_LINKS.map((link, index) => (
               <li key={index} className="relative group">
                 <a
                   href={link.href}
-                  className="px-5 py-2 text-[12px] font-bold uppercase tracking-[0.15em] text-secondary-dark/70 hover:text-secondary-dark transition-colors"
+                  className="px-2 py-2 text-[12px] font-bold uppercase tracking-[0.15em] text-secondary-dark/70 hover:text-secondary-dark transition-colors"
                 >
                   {link.name}
                 </a>
