@@ -5,10 +5,10 @@ import Container from "../../../components/layout/Container";
 
 export default function FeaturedProjects() {
   const projects = [
-    "https://cdn.pixabay.com/photo/2017/01/28/19/31/landscape-2016308_1280.jpg",
-    "https://cdn.pixabay.com/photo/2016/11/18/15/07/swimming-pool-1835227_1280.jpg",
-    "https://cdn.pixabay.com/photo/2016/11/29/09/32/swimming-pool-1869797_1280.jpg",
-    "https://cdn.pixabay.com/photo/2017/03/27/14/56/water-2178579_1280.jpg",
+    "f2.jpg",
+    "/f1.avif",
+    "/f2.avif",
+    "/f3.avif",
   ];
 
   return (

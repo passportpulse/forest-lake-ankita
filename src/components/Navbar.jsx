@@ -2,7 +2,6 @@ import { useState, useEffect } from "react";
 import { Menu, X, ArrowRight } from "lucide-react";
 import { NAV_LINKS } from "../constants/navigation"; // Import the separated menu
 import Container from "./layout/Container";
-import logo from "../../public/logo.png";
 
 export default function Navbar() {
   const [open, setOpen] = useState(false);
@@ -26,7 +25,7 @@ export default function Navbar() {
         {/* Logo Section */}
         <div className="flex items-center gap-4 group cursor-pointer">
           <img
-            src={logo}
+            src="/logo.png"
             alt="Forest Lakes Logo"
             className="h-12 w-auto object-contain"
           />

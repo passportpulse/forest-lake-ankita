@@ -12,9 +12,9 @@ import "swiper/css/effect-fade";
 
 export default function HeroSection() {
   const slides = [
-    "https://cdn.pixabay.com/photo/2017/01/28/19/31/landscape-2016308_1280.jpg",
-    "https://live.staticflickr.com/8637/16386617107_a710a6c28c_b.jpg",
-    "https://img.freepik.com/free-photo/umbrella-chair_74190-2092.jpg?semt=ais_rp_progressive&w=740&q=80",
+    "/hero.jpg",
+    "/hero2.jpg",
+    "/hero3.jpg",
   ];
 
   return (

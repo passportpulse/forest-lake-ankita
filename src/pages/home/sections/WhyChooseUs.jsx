@@ -32,14 +32,23 @@ export default function WhyChooseUs() {
         <div className="grid md:grid-cols-2 gap-10 items-center">
 
           <img
-            src="https://cdn.pixabay.com/photo/2016/11/29/03/53/pool-1867285_1280.jpg"
+            src="/choose.avif"
             className="rounded-xl shadow-lg"
           />
 
           <div>
-            <h2 className="text-3xl font-bold mb-6 text-slate-900">
+            <h2 className="text-3xl font-bold mb-4 text-slate-900">
               Why Choose Us
             </h2>
+
+            {/* Paragraph Added */}
+            <p className="text-gray-600 mb-8 leading-relaxed">
+              We combine experience, innovation, and customer-focused service to
+              deliver exceptional aquatic solutions. From design and planning to
+              installation and maintenance, our team ensures every project is
+              completed with precision, quality materials, and modern
+              technology to provide long-lasting and reliable results.
+            </p>
 
             <div className="grid sm:grid-cols-2 gap-6">
               {features.map((item, i) => (
