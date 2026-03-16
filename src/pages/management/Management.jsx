@@ -185,7 +185,7 @@ export default function Management() {
                       {initials}
                     </span>
                   </div>
-                  <span className="text-[10px] font-bold text-primary-dark uppercase tracking-[0.2em] mb-1">
+                  <span className="text-[10px] font-bold text-secondary-dark/90 uppercase tracking-[0.2em] mb-1">
                     Board of Directors
                   </span>
                   <h3 className="text-lg md:text-2xl font-bold text-secondary-dark leading-tight">
