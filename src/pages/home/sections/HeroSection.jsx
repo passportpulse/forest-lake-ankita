@@ -50,61 +50,46 @@ export default function HeroSection() {
               initial={{ opacity: 0, y: 15 }}
               animate={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.8 }}
+              className="flex flex-col items-center text-center md:items-start md:text-left space-y-4 md:space-y-6"
             >
-              <div className="inline-flex items-center gap-2 px-3 py-1.5 mb-3 md:mb-6 rounded-full bg-white/10 backdrop-blur-xl border border-white/20 text-white font-bold text-[9px] md:text-xs uppercase tracking-[0.2em] shadow-xl">
-                <Waves
-                  size={14}
-                  className="animate-pulse text-white" // Keeping the icon colored to make it pop
-                />
+              {/* 1. Badge - Glass Finish */}
+              <div className="inline-flex items-center gap-2 px-3 py-1.5 rounded-full bg-white/10 backdrop-blur-xl border border-white/20 text-white font-bold text-[9px] md:text-xs uppercase tracking-[0.2em] shadow-lg">
+                <Waves size={14} className="animate-pulse text-primary-dark" />
                 <span className="drop-shadow-md">Premium Engineering</span>
               </div>
 
-              {/* TEXT READABILITY TECH: 
-                - drop-shadow-[0_2px_10px_rgba(0,0,0,0.8)] adds a deep but tight shadow.
-                - webkit-text-stroke adds a subtle outline to separate letters from HD backgrounds.
-              */}
-              <h1
-                style={{
-                  fontFamily: "'Playfair Display', serif",
-                  WebkitTextStroke: "0.5px rgba(0,0,0,0.3)",
-                }}
-                className="text-3xl md:text-7xl lg:text-8xl font-medium text-white mb-3 md:mb-6 leading-[1.2] md:leading-[1.1] tracking-tight drop-shadow-[0_5px_15px_rgba(0,0,0,0.9)]"
-              >
-                Pioneering Water
-                <br className="hidden md:block" />
-                Architecture
-              </h1>
+              {/* 2. Heading - Single Line Glass Wrap */}
+              <div className="w-fit max-w-full px-4 py-2 md:px-6 md:py-3 rounded-2xl md:rounded-3xl bg-white/5 backdrop-blur-md border border-white/10 shadow-xl">
+                <h1
+                  style={{ fontFamily: "'Playfair Display', serif" }}
+                  className="text-2xl md:text-6xl lg:text-5xl font-medium text-white leading-tight tracking-tight whitespace-nowrap"
+                >
+                  Pioneering{" "}
+                  <span className="italic text-cyan-100">Water</span>{" "}
+                  Architecture
+                </h1>
+              </div>
 
-              <p className="text-white md:text-slate-100 text-[11px] md:text-xl font-semibold md:font-light max-w-70 md:max-w-2xl leading-relaxed mb-6 md:mb-10 drop-shadow-[0_2px_5px_rgba(0,0,0,1)]">
-                Crafting luxury swimming pools and commercial aquatic landscapes
-              </p>
+              {/* 3. Slogan - Separate Glass Line */}
+              <div className="w-fit px-4 py-2 rounded-xl bg-white/5 backdrop-blur-sm border border-white/5">
+                <p className="text-white md:text-slate-100 text-[10px] md:text-lg font-bold md:font-light max-w-sm md:max-w-2xl leading-relaxed">
+                  Crafting luxury swimming pools and commercial aquatic
+                  landscapes
+                </p>
+              </div>
 
-              <div className="flex justify-center md:justify-start">
+              {/* 4. Action Button - Glass Finish */}
+              <div className="flex justify-center md:justify-start pt-2">
                 <Link
                   to="/free-quote"
-                  /* Key Glassmorphism Classes:
-      - bg-white/10: Semi-transparent white
-      - backdrop-blur-md: The glass frosting effect
-      - border border-white/20: The highlight on the glass edge
-      - hover:bg-white/20: Interactive feedback
-    */
-                  className="group relative overflow-hidden bg-white/10 backdrop-blur-md text-white px-7 py-3 md:px-12 md:py-5 rounded-full font-medium text-xs md:text-base transition-all active:scale-95 flex items-center gap-2 shadow-xl border border-white/20 hover:bg-white/20 hover:border-white/40"
+                  className="group relative overflow-hidden bg-white/20 backdrop-blur-lg text-white px-8 py-3.5 md:px-12 md:py-5 rounded-full font-bold text-xs md:text-base transition-all border border-white/30 hover:bg-white/30 flex items-center gap-2 shadow-2xl"
                 >
-                  {/* Text color changed to white for glass contrast, using drop-shadow for extra clarity */}
-                  <span className="relative z-10 drop-shadow-md">
-                    Get Free Quote
-                  </span>
-
+                  <span className="relative z-10">Get Free Quote</span>
                   <ArrowRight
-                    size={16}
-                    className="relative z-10 group-hover:translate-x-1 transition-transform drop-shadow-md"
+                    size={18}
+                    className="relative z-10 group-hover:translate-x-1 transition-transform"
                   />
-
-                  {/* The Shimmer Effect - already works perfectly with glass! */}
-                  <div className="absolute inset-0 w-full h-full bg-linear-to-r from-transparent via-white/30 to-transparent -translate-x-full group-hover:animate-[shimmer_1.5s_infinite]" />
-
-                  {/* Subtle Inner Glow for "Luxury" feel */}
-                  <div className="absolute inset-0 bg-linear-to-tr from-white/5 to-transparent pointer-events-none" />
+                  <div className="absolute inset-0 w-full h-full bg-linear-to-r from-transparent via-white/40 to-transparent -translate-x-full group-hover:animate-[shimmer_1.5s_infinite]" />
                 </Link>
               </div>
             </motion.div>
