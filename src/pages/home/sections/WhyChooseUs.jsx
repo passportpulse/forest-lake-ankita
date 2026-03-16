@@ -1,4 +1,4 @@
-import logo from "../../../../public/logo.png";
+import logo from "../../../../public/logo.webp";
 import { ShieldCheck, Wrench, Users, Award } from "lucide-react";
 import Section from "../../../components/layout/Section";
 import Container from "../../../components/layout/Container";

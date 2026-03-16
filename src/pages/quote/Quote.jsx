@@ -2,6 +2,7 @@ import Section from "../../components/layout/Section";
 import Container from "../../components/layout/Container";
 import { Phone, Mail, MapPin, ArrowRight } from "lucide-react";
 import CommonHeader from "../../components/Header";
+import header6 from "../../../public/header6.webp";
 
 export default function Quote() {
   return (
@@ -11,7 +12,7 @@ export default function Quote() {
         title="Get a Free Quote"
         subtitle="Tell us about your project and receive a customized estimate for swimming pools, water parks, fountains, landscapes, resort developments, rain dance systems, kids play areas, and theme parks."
         category="Start Your Project"
-        image="https://www.pulliam.com/wp-content/uploads/2025/10/JimiSmithPhotographyEW05-12-950x0-c-f.webp"
+        image={header6}
       />
 
       {/* PROCESS */}

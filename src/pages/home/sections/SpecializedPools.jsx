@@ -1,20 +1,20 @@
 import Section from "../../../components/layout/Section";
 import Container from "../../../components/layout/Container";
+import img2 from "../../../../public/2rooftop-pool.webp";
+import img3 from "../../../../public/3jacuzzi.webp";
 
 export default function SpecializedPools() {
   const specializedServices = [
     {
       title: "Rooftop Swimming Pools",
       desc: "Engineering high-end, leak-proof aquatic spaces for modern skyscrapers and private villas.",
-      image:
-        "https://www.diamondspas.com/wp-content/uploads/2022/10/JimiSmithPhotography12.jpg",
+      image: img2,
       tag: "Premium Engineering",
     },
     {
       title: "FRP Pools & Jacuzzi",
       desc: "Advanced Fiber Reinforced Plastic solutions offering rapid installation and low maintenance.",
-      image:
-        "https://d91ztqmtx7u1k.cloudfront.net/ClientContent/Images/Catalogue/blue-frp-jacuzzi-swimming-pool-for-residential20230825090333.jpeg",
+      image: img3,
       tag: "Rapid Installation",
     },
   ];

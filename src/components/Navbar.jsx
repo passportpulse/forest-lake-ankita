@@ -2,7 +2,7 @@ import { useState, useEffect } from "react";
 import { Menu, X, ArrowRight } from "lucide-react";
 import { NAV_LINKS } from "../constants/navigation"; 
 import Container from "./layout/Container";
-import logo from "../../public/logo.png";
+import logo from "../../public/logo.webp";
 import { Link } from "react-router-dom";
 
 export default function Navbar() {

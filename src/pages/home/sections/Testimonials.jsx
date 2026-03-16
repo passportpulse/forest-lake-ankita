@@ -4,6 +4,10 @@ import { Navigation, Autoplay, Pagination } from "swiper/modules";
 import { Quote, ChevronLeft, ChevronRight, Star } from "lucide-react";
 import Section from "../../../components/layout/Section";
 import Container from "../../../components/layout/Container";
+import m1 from "../../../../public/m1.webp";
+import m2 from "../../../../public/m2.webp";
+import m3 from "../../../../public/m3.webp";
+import f1 from "../../../../public/f1.webp";
 
 // Import Swiper styles
 import "swiper/css";
@@ -15,8 +19,7 @@ export default function Testimonials() {
     {
       name: "Sanjay Chatterjee",
       role: "Resort Owner",
-      image:
-        "https://thumbs.dreamstime.com/b/portrait-young-handsome-indian-bengali-man-standing-front-victoria-memorial-wearing-blue-shirt-indian-lifestyle-186343540.jpg",
+      image: m1,
       text: "Forest Lakes transformed our resort area with a stunning infinity pool. Their attention to detail in the filtration system was truly world-class.",
       location: "Kolkata",
       rating: 3.8,
@@ -24,8 +27,7 @@ export default function Testimonials() {
     {
       name: "Priya Sharma",
       role: "Home Owner",
-      image:
-        "https://img.freepik.com/free-photo/indian-hindu-girl-traditional-violet-saree-sitting-cafe-table_627829-1989.jpg?semt=ais_rp_progressive&w=740&q=80",
+      image: f1,
       text: "The team was professional and maintained a clean workspace throughout. Our backyard pool looks exactly like the 3D design they showed us.",
       location: "Durgapur",
       rating: 4,
@@ -33,8 +35,7 @@ export default function Testimonials() {
     {
       name: "Amitabh Roy",
       role: "Real Estate Developer",
-      image:
-        "https://www.shutterstock.com/image-photo/outdoor-photo-bangladeshi-man-smiling-600nw-2574912025.jpg",
+      image: m2,
       text: "A reliable partner for large scale water projects. They handled the entire commercial park installation with complete technical expertise.",
       location: "West Bengal",
       rating: 4.1,
@@ -42,8 +43,7 @@ export default function Testimonials() {
     {
       name: "Vikram Malhotra",
       role: "Hotel Manager",
-      image:
-        "https://www.shutterstock.com/image-photo/young-man-wearing-green-shirt-600nw-2158049973.jpg",
+      image: m3,
       text: "Excellent service from planning to execution. The maintenance support they provide is prompt and keeps our facility running smoothly.",
       location: "Asansol",
       rating: 5,

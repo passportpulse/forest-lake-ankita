@@ -21,7 +21,7 @@ export default function Footer() {
           <div className="lg:col-span-4 flex flex-col gap-4">
             <div className="flex items-center gap-3 group">
               <img
-                src="/logo.png"
+                src="/logo.webp"
                 alt="Forest Lakes Logo"
                 className="h-12 w-auto object-contain"
               />

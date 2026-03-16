@@ -11,13 +11,25 @@ import {
   Settings,
   WavesIcon,
 } from "lucide-react";
+import img1 from "../../public/1pool.webp";
+import img2 from "../../public/2rooftop-pool.webp";
+import img3 from "../../public/3jacuzzi.webp";
+import img4 from "../../public/4water-park.webp";
+import img5 from "../../public/5fountain.webp";
+import img6 from "../../public/6musical-fountain.webp";
+import img7 from "../../public/7plan.webp";
+import img8 from "../../public/8rain-dance.webp";
+import img9 from "../../public/9play.webp";
+import img10 from "../../public/10park.webp";
+import img11 from "../../public/11equipment.webp";
+import img12 from "../../public/12tiles.webp";
+import img13 from "../../public/13management.webp";
 
 export const servicesData = [
   {
     title: "Swimming Pool",
     icon: Waves,
-    image:
-      "https://img.freepik.com/free-photo/umbrella-chair_74190-2092.jpg?semt=ais_rp_50_assets&w=740&q=80",
+    image: img1,
     description:
       "We design and construct premium swimming pools for residential, commercial, and resort projects with high quality materials and modern filtration systems.",
     points: [
@@ -30,7 +42,7 @@ export const servicesData = [
   {
     title: "Rooftop Swimming Pool",
     icon: Waves,
-    image: "https://www.diamondspas.com/wp-content/uploads/2022/10/JimiSmithPhotography12.jpg",
+    image: img2,
     description:
       "Specialized engineering solutions for high-altitude aquatic spaces, focusing on leak-proof structural integrity and lightweight luxury designs for high-rises.",
     points: [
@@ -42,8 +54,8 @@ export const servicesData = [
   },
   {
     title: "FRP Pools & Jacuzzi",
-    icon: WavesIcon, 
-    image: "https://d91ztqmtx7u1k.cloudfront.net/ClientContent/Images/Catalogue/blue-frp-jacuzzi-swimming-pool-for-residential20230825090333.jpeg",
+    icon: WavesIcon,
+    image: img3,
     description:
       "Advanced Fiber Reinforced Plastic systems that offer rapid on-site installation, superior durability, and low-maintenance luxury for modern homes.",
     points: [
@@ -57,8 +69,7 @@ export const servicesData = [
   {
     title: "Water Park",
     icon: Droplets,
-    image:
-      "https://media.istockphoto.com/id/163195371/photo/water-park-with-colorful-slides.jpg?s=612x612&w=0&k=20&c=BjKybrArUcL4FEDYSHFJa7kLAg3roRaDNZyRZUGMK-s=",
+    image: img4,
     description:
       "Complete planning and execution of modern water parks with safe structures, exciting rides, and efficient water management systems.",
     points: [
@@ -72,8 +83,7 @@ export const servicesData = [
   {
     title: "Fountain",
     icon: Droplets,
-    image:
-      "https://t4.ftcdn.net/jpg/01/65/11/81/360_F_165118187_lMqLJurPvrMLtdJfxPHKrWhaB95WJlTu.jpg",
+    image: img5,
     description:
       "Elegant fountains designed to enhance landscapes, commercial spaces, and public areas with beautiful water features.",
     points: [
@@ -87,8 +97,7 @@ export const servicesData = [
   {
     title: "Musical Fountain",
     icon: Music,
-    image:
-      "https://media.istockphoto.com/id/615606092/photo/music-fountain-at-night.jpg?s=612x612&w=0&k=20&c=dJcAZ2pnMk3PmNPq_C0CteEaD2LaSlq2_ALL3TDKYwE=",
+    image: img6,
     description:
       "Musical fountains combine water, lights, and sound to create stunning synchronized shows for parks, resorts, and public attractions.",
     points: [
@@ -102,8 +111,7 @@ export const servicesData = [
   {
     title: "Resort Planning & Execution",
     icon: Building2,
-    image:
-      "https://synergydesigns.co.in/wp-content/uploads/2020/05/Masterplan.jpg",
+    image: img7,
     description:
       "Complete resort design and development services including water attractions, pools, and landscape features.",
     points: [
@@ -117,8 +125,7 @@ export const servicesData = [
   {
     title: "Rain Dance",
     icon: CloudRain,
-    image:
-      "https://media-cdn.tripadvisor.com/media/photo-s/0d/dc/ee/d2/rain-dance-at-escape.jpg",
+    image: img8,
     description:
       "Fun and energetic rain dance setups for resorts, clubs, and entertainment venues.",
     points: [
@@ -132,8 +139,7 @@ export const servicesData = [
   {
     title: "Children's Play Area",
     icon: Baby,
-    image:
-      "https://www.shutterstock.com/image-photo/childrens-playground-variety-play-structures-600nw-2501204345.jpg",
+    image: img9,
     description:
       "Creative and safe play zones designed specifically for children in parks, schools, and resorts.",
     points: [
@@ -147,8 +153,7 @@ export const servicesData = [
   {
     title: "Theme Park",
     icon: FerrisWheel,
-    image:
-      "https://t3.ftcdn.net/jpg/02/97/98/70/360_F_297987083_gkDNacaNKvHlRKYWRXCwfhI3dNtMmrlJ.jpg",
+    image: img10,
     description:
       "Complete planning and development of theme parks with entertainment attractions and immersive environments.",
     points: [
@@ -162,8 +167,7 @@ export const servicesData = [
   {
     title: "Pool Equipment Supply",
     icon: Wrench,
-    image:
-      "https://media.istockphoto.com/id/1309232360/photo/swimming-pool-maintenance.jpg?s=612x612&w=0&k=20&c=EYpD7r990Ja3__xwA2DPL0d_uLPhFY3IzL-bsUA4pIQ=",
+    image: img11,
     description:
       "Supply of high quality swimming pool equipment and accessories for efficient pool operations.",
     points: [
@@ -177,8 +181,7 @@ export const servicesData = [
   {
     title: "Pool Tiles",
     icon: Grid,
-    image:
-      "https://media.istockphoto.com/id/184106837/photo/into-the-pool.jpg?s=612x612&w=0&k=20&c=M1YvpVOtxzEhfU01A-6MYTseRChXqgHEKBIaQm3vHqk=",
+    image: img12,
 
     description:
       "Premium pool tiles designed for durability, aesthetics, and long-lasting performance.",
@@ -193,8 +196,7 @@ export const servicesData = [
   {
     title: "Maintenance Work",
     icon: Settings,
-    image:
-      "https://t4.ftcdn.net/jpg/04/98/89/87/360_F_498898705_yy4M0PyTxSCK3mZTxXqLj2KQeHxwPxY1.jpg",
+    image: img13,
     description:
       "Professional maintenance services to keep pools, fountains, and water attractions running smoothly.",
     points: [

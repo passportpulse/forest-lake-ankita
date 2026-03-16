@@ -3,12 +3,13 @@ import { Link, useLocation } from "react-router-dom";
 import Section from "./layout/Section";
 import Container from "./layout/Container";
 import { ChevronRight, HomeIcon } from "lucide-react";
+import img1 from "../../public/header1.webp";
 
 export default function CommonHeader({
   title,
   subtitle,
   category,
-  image = "/images/header-decor.jpg",
+  image = img1,
 }) {
   const location = useLocation();
   const pathnames = location.pathname.split("/").filter((x) => x);

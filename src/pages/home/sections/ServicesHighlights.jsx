@@ -1,4 +1,6 @@
+import React from "react";
 import { Link } from "react-router-dom";
+import { motion } from "framer-motion";
 import {
   Waves,
   Droplets,
@@ -12,51 +14,55 @@ import {
 import Section from "../../../components/layout/Section";
 import Container from "../../../components/layout/Container";
 
+// Optimized WebP Imports
+import img1 from "../../../../public/1pool.webp";
+import img2 from "../../../../public/2rooftop-pool.webp";
+import img4 from "../../../../public/4water-park.webp";
+import img5 from "../../../../public/5fountain.webp";
+import img7 from "../../../../public/7plan.webp";
+import img8 from "../../../../public/8rain-dance.webp";
+
+// Moved outside component to prevent unnecessary re-renders
+const services = [
+  {
+    title: "Swimming Pools",
+    icon: Waves,
+    desc: "Custom-designed residential and commercial pools.",
+    image: img1,
+  },
+  {
+    title: "Water Parks",
+    icon: Droplets,
+    desc: "Complete planning and execution of thrilling parks.",
+    image: img4,
+  },
+  {
+    title: "Fountains",
+    icon: Sparkles,
+    desc: "Architectural water movement and light design.",
+    image: img5,
+  },
+  {
+    title: "Landscape",
+    icon: Trees,
+    desc: "Creative landscaping for resort environments.",
+    image: img7,
+  },
+  {
+    title: "Resort Projects",
+    icon: Building2,
+    desc: "End-to-end water feature development.",
+    image: img2,
+  },
+  {
+    title: "Kids Play Area",
+    icon: Baby,
+    desc: "Safe and fun water play zones for children.",
+    image: img8,
+  },
+];
+
 export default function ServicesHighlights() {
-  const services = [
-    {
-      title: "Swimming Pools",
-      icon: Waves,
-      desc: "Custom-designed residential and commercial pools.",
-      image:
-        "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRewvEfon0lO6Vp-ilvImVHFHzu-kSjE1AQLQ&s",
-    },
-    {
-      title: "Water Parks",
-      icon: Droplets,
-      desc: "Complete planning and execution of thrilling parks.",
-      image:
-        "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTjQtPZhwbxZ7AOc7nSQcZ1t6gHHBZOxONG-Q&s",
-    },
-    {
-      title: "Fountains",
-      icon: Sparkles,
-      desc: "Architectural water movement and light design.",
-      image:
-        "https://upload.wikimedia.org/wikipedia/commons/thumb/5/5d/Font_M%C3%A0gica_de_Montju%C3%AFc_10_%282009-05-24%29.JPG/330px-Font_M%C3%A0gica_de_Montju%C3%AFc_10_%282009-05-24%29.JPG",
-    },
-    {
-      title: "Landscape",
-      icon: Trees,
-      desc: "Creative landscaping for resort environments.",
-      image:
-        "https://vandesign.asia/wp-content/uploads/2023/03/7-most-beautiful-resort-landscape-garden-design-models-in-2022-1.jpg",
-    },
-    {
-      title: "Resort Projects",
-      icon: Building2,
-      desc: "End-to-end water feature development.",
-      image:
-        "https://cf.bstatic.com/xdata/images/hotel/max1024x768/656411102.jpg?k=7e1185b2b5cee354505b239d9266d7b4e14922dcc32f66404c06554bacdbac1a&o=",
-    },
-    {
-      title: "Kids Play Area",
-      icon: Baby,
-      desc: "Safe and fun water play zones for children.",
-      image:
-        "https://img.freepik.com/free-photo/outdoors-colorful-children-playground-background_23-2149587761.jpg?semt=ais_rp_progressive&w=740&q=80",
-    },
-  ];
   return (
     <Section className="bg-white py-12 md:py-20">
       <Container>
@@ -69,7 +75,6 @@ export default function ServicesHighlights() {
             <div className="w-10 h-1 bg-primary-light rounded-full" />
           </div>
 
-          {/* Desktop Only Button (Hidden on Mobile) */}
           <Link
             to="/services"
             className="hidden md:flex items-center gap-2 text-secondary-dark font-bold border-b-2 border-primary-light pb-1 hover:text-primary-dark transition-colors"
@@ -83,39 +88,46 @@ export default function ServicesHighlights() {
           {services.map((service, index) => {
             const Icon = service.icon;
             return (
-              <div key={index} className="min-w-65 md:min-w-full snap-center">
-                <div
-                  whileHover={{ y: -5 }}
-                  className="group relative h-50 md:h-65 rounded-lg overflow-hidden shadow-md"
-                >
+              <motion.div 
+                key={index} 
+                initial={{ opacity: 0, y: 20 }}
+                whileInView={{ opacity: 1, y: 0 }}
+                viewport={{ once: true }}
+                transition={{ delay: index * 0.1 }}
+                className="min-w-70 md:min-w-full snap-center"
+              >
+                <div className="group relative h-50 md:h-65 rounded-xl overflow-hidden shadow-md transition-all duration-300 hover:shadow-xl">
                   <img
                     src={service.image}
                     alt={service.title}
-                    className="absolute inset-0 w-full h-full object-cover"
+                    loading="lazy"
+                    decoding="async"
+                    className="absolute inset-0 w-full h-full object-cover transition-transform duration-500 group-hover:scale-110"
                   />
-                  <div className="absolute inset-0 bg-linear-to-t from-secondary-dark/90 via-secondary-dark/20 to-transparent" />
+                  {/* Glassmorphism subtle overlay */}
+                  <div className="absolute inset-0 bg-linear-to-t from-secondary-dark/90 via-secondary-dark/10 to-transparent" />
 
                   <div className="absolute inset-0 p-5 flex flex-col justify-end text-white">
                     <div className="flex items-center gap-3">
-                      <div className="p-1.5 bg-primary-light text-secondary-dark rounded-lg">
-                        <Icon size={16} />
+                      <div className="p-2 bg-primary-light/90 backdrop-blur-md text-secondary-dark rounded-lg">
+                        <Icon size={18} />
                       </div>
-                      <h3 className="font-bold text-base md:text-lg">
+                      <h3 className="font-bold text-base md:text-lg drop-shadow-md">
                         {service.title}
                       </h3>
                     </div>
                   </div>
                 </div>
-              </div>
+              </motion.div>
             );
           })}
         </div>
 
-        {/* Mobile Small Button (Visible only on Mobile) */}
+        {/* Mobile View All Button */}
         <div className="mt-8 flex justify-center md:hidden">
           <Link
             to="/services"
-            className="flex items-center gap-2 bg-secondary-dark text-white px-5 py-2.5 rounded-full text-sm font-semibold shadow-md active:scale-95 transition-transform"
+            className="flex items-center gap-2 bg-secondary-dark text-white px-6 py-3 rounded-full text-sm font-semibold shadow-lg active:scale-95 transition-transform"
           >
             Show All <ArrowRight size={16} />
           </Link>

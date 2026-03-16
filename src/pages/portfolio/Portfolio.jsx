@@ -5,6 +5,7 @@ import { portfolioData } from "../../data/portfolioData";
 import PortfolioModal from "../../components/modals/PortfolioModal";
 import { PlayCircle } from "lucide-react";
 import CommonHeader from "../../components/Header";
+import header3 from "../../../public/header3.webp";
 
 const categories = [
   { label: "All", value: "all" },
@@ -37,7 +38,7 @@ export default function Portfolio() {
         title="Our Portfolio"
         subtitle="Explore our completed projects including Swimming Pools, Water Parks, Fountains, Landscapes, Resort Developments, Rain Dance installations, Kids Play Areas, and Theme Parks."
         category="Our Work"
-        image="https://c4.wallpaperflare.com/wallpaper/136/332/45/summer-high-resolution-widescreen-wallpaper-preview.jpg"
+        image={header3}
       />
 
       {/* FILTER + PORTFOLIO */}

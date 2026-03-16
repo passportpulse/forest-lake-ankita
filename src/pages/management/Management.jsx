@@ -10,6 +10,7 @@ import {
   Quote,
 } from "lucide-react";
 import CommonHeader from "../../components/Header";
+import header4 from "../../../public/header4.webp";
 
 export default function Management() {
   const managementTeam = [
@@ -72,7 +73,7 @@ export default function Management() {
         title="Management Team"
         subtitle="Meet the visionary leaders behind Forest Lakes - experienced professionals dedicated to excellence in aquatic solutions."
         category="Leadership"
-        image="https://img.staticmb.com/mbcontent/images/crop/uploads/2024/8/Swimming-Pool-Designs_0_1200.jpg.webp"
+        image={header4}
       />
 
       {/* MESSAGE FROM LEADERSHIP */}
