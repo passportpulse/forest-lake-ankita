@@ -117,7 +117,7 @@ ${formData.query}
                   <p className="text-xs md:text-sm font-semibold text-secondary-dark leading-relaxed">
                     34/1Q, Ballygunge Circular Road <br />
                     Heritage House <br />
-                    Kolkata – 700019
+                    Kolkata – 700069
                   </p>
                 </div>
               </div>

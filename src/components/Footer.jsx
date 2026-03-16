@@ -104,7 +104,7 @@ export default function Footer() {
                 <p className="text-sm text-primary-light/70 leading-tight">
                   34/1Q, Ballygunge Circular Road,
                   <br />
-                  Heritage House, Kolkata – 700019
+                  Heritage House, Kolkata – 700069
                 </p>
               </div>
             </div>
