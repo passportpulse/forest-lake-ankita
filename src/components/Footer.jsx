@@ -78,14 +78,34 @@ export default function Footer() {
             </h3>
             <div className="space-y-3">
               <a
-                href="tel:+917710942995"
+                href="tel:+91 9147371755"
                 className="flex items-center gap-3 group"
               >
                 <Phone
                   size={14}
                   className="text-primary-light/40 group-hover:text-primary-light"
                 />
-                <span className="text-sm font-medium">+91 77109 42995</span>
+                <span className="text-sm font-medium">9147371755</span>
+              </a>
+              <a
+                href="tel:+91 9903534695"
+                className="flex items-center gap-3 group"
+              >
+                <Phone
+                  size={14}
+                  className="text-primary-light/40 group-hover:text-primary-light"
+                />
+                <span className="text-sm font-medium">9903534695</span>
+              </a>
+              <a
+                href="tel:+91 9005777009"
+                className="flex items-center gap-3 group"
+              >
+                <Phone
+                  size={14}
+                  className="text-primary-light/40 group-hover:text-primary-light"
+                />
+                <span className="text-sm font-medium">9005777009</span>
               </a>
               <a
                 href="mailto:forestlakes54@gmail.com"

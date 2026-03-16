@@ -160,7 +160,7 @@ export default function Quote() {
             <div className="bg-white p-6 rounded-xl shadow-sm">
               <Phone className="mx-auto mb-3 text-primary-dark" size={22} />
               <h4 className="font-semibold text-sm mb-1">Call Us</h4>
-              <p className="text-slate-600 text-sm">+91 7710941885</p>
+              <p className="text-slate-600 text-sm">+91 9147371755</p>
             </div>
 
             <div className="bg-white p-6 rounded-xl shadow-sm">

@@ -14,10 +14,9 @@ export default function ContactPage() {
   });
 
   const phoneNumbers = [
-    { label: "Project Inquiry", num: "+91 7710942995" },
-    { label: "Project Inquiry (Alt)", num: "+91 7710941885" },
-    { label: "Support", num: "+91 9147371755" },
-    { label: "Landline", num: "034 23005000" },
+    { label: "Project Inquiry", num: "+91 9147371755" },
+    { label: "Project Inquiry (Alt)", num: "+91 9903534695" },
+    { label: "Support", num: "+91 9005777009" },
   ];
 
   const handleChange = (e) => {
@@ -41,7 +40,7 @@ Query:
 ${formData.query}
 `;
 
-    const whatsappURL = `https://wa.me/917710941885?text=${encodeURIComponent(
+    const whatsappURL = `https://wa.me/+919147371755?text=${encodeURIComponent(
       message,
     )}`;
 
@@ -133,7 +132,7 @@ ${formData.query}
                 </h3>
 
                 <a
-                  href="https://wa.me/917710942995"
+                  href="https://wa.me/+919903534695"
                   className="inline-flex items-center gap-2 bg-primary-dark px-3 md:px-4 py-2 rounded-lg text-xs md:text-sm font-semibold hover:bg-primary-light hover:text-secondary-dark transition"
                 >
                   Start Chat
