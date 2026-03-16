@@ -62,6 +62,7 @@ const services = [
   },
 ];
 
+
 export default function ServicesHighlights() {
   return (
     <Section className="bg-white py-12 md:py-20">
@@ -83,8 +84,8 @@ export default function ServicesHighlights() {
           </Link>
         </div>
 
-        {/* Swipe Container for Mobile / Grid for Desktop */}
-        <div className="flex overflow-x-auto pb-4 gap-4 snap-x snap-mandatory md:grid md:grid-cols-3 md:gap-6 scrollbar-hide">
+        {/* Swipe Container - Added 'no-scrollbar' logic and adjusted padding */}
+        <div className="flex overflow-x-auto pb-2 gap-4 snap-x snap-mandatory md:grid md:grid-cols-3 md:gap-6 scrollbar-hide">
           {services.map((service, index) => {
             const Icon = service.icon;
             return (
@@ -94,25 +95,27 @@ export default function ServicesHighlights() {
                 whileInView={{ opacity: 1, y: 0 }}
                 viewport={{ once: true }}
                 transition={{ delay: index * 0.1 }}
-                className="min-w-70 md:min-w-full snap-center"
+                // min-w-[75%] ensures the next card is partially visible, 
+                // prompting the user to swipe without needing a scrollbar.
+                className="min-w-[75%] md:min-w-full snap-center first:pl-2 last:pr-2 md:first:pl-0 md:last:pr-0"
               >
-                <div className="group relative h-50 md:h-65 rounded-xl overflow-hidden shadow-md transition-all duration-300 hover:shadow-xl">
+                <div className="group relative h-56 md:h-65 rounded-2xl overflow-hidden shadow-md transition-all duration-300 hover:shadow-xl">
                   <img
                     src={service.image}
                     alt={service.title}
                     loading="lazy"
                     decoding="async"
-                    className="absolute inset-0 w-full h-full object-cover transition-transform duration-500 group-hover:scale-110"
+                    className="absolute inset-0 w-full h-full object-cover transition-transform duration-700 group-hover:scale-110"
                   />
-                  {/* Glassmorphism subtle overlay */}
-                  <div className="absolute inset-0 bg-linear-to-t from-secondary-dark/90 via-secondary-dark/10 to-transparent" />
+                  
+                  <div className="absolute inset-0 bg-gradient-to-t from-secondary-dark/90 via-secondary-dark/20 to-transparent" />
 
                   <div className="absolute inset-0 p-5 flex flex-col justify-end text-white">
                     <div className="flex items-center gap-3">
-                      <div className="p-2 bg-primary-light/90 backdrop-blur-md text-secondary-dark rounded-lg">
+                      <div className="p-2 bg-white/20 backdrop-blur-md border border-white/30 text-white rounded-xl">
                         <Icon size={18} />
                       </div>
-                      <h3 className="font-bold text-base md:text-lg drop-shadow-md">
+                      <h3 className="font-bold text-lg tracking-tight">
                         {service.title}
                       </h3>
                     </div>
@@ -127,9 +130,9 @@ export default function ServicesHighlights() {
         <div className="mt-8 flex justify-center md:hidden">
           <Link
             to="/services"
-            className="flex items-center gap-2 bg-secondary-dark text-white px-6 py-3 rounded-full text-sm font-semibold shadow-lg active:scale-95 transition-transform"
+            className="flex items-center gap-2 bg-secondary-dark text-white px-8 py-3 rounded-full text-sm font-bold shadow-lg active:scale-95 transition-all"
           >
-            Show All <ArrowRight size={16} />
+            Show All Services <ArrowRight size={16} />
           </Link>
         </div>
       </Container>
