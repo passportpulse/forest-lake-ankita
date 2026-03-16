@@ -9,6 +9,7 @@ import {
   Wrench,
   Grid,
   Settings,
+  WavesIcon,
 } from "lucide-react";
 
 export const servicesData = [
@@ -24,6 +25,32 @@ export const servicesData = [
       "Luxury residential pools",
       "Commercial pool construction",
       "Advanced filtration systems",
+    ],
+  },
+  {
+    title: "Rooftop Swimming Pool",
+    icon: Waves,
+    image: "https://www.diamondspas.com/wp-content/uploads/2022/10/JimiSmithPhotography12.jpg",
+    description:
+      "Specialized engineering solutions for high-altitude aquatic spaces, focusing on leak-proof structural integrity and lightweight luxury designs for high-rises.",
+    points: [
+      "Leak-proof structural engineering",
+      "High-rise weight optimization",
+      "Luxury skyline aesthetics",
+      "Integrated safety systems",
+    ],
+  },
+  {
+    title: "FRP Pools & Jacuzzi",
+    icon: WavesIcon, 
+    image: "https://d91ztqmtx7u1k.cloudfront.net/ClientContent/Images/Catalogue/blue-frp-jacuzzi-swimming-pool-for-residential20230825090333.jpeg",
+    description:
+      "Advanced Fiber Reinforced Plastic systems that offer rapid on-site installation, superior durability, and low-maintenance luxury for modern homes.",
+    points: [
+      "Rapid installation process",
+      "Corrosion-resistant materials",
+      "Hydrotherapy Jacuzzi integration",
+      "Low maintenance costs",
     ],
   },
 
