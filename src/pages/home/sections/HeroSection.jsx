@@ -47,42 +47,42 @@ export default function HeroSection() {
         <Container>
           <div className="flex flex-col items-center text-center md:items-start md:text-left max-w-4xl w-full">
             <motion.div
-              initial={{ opacity: 0, y: 15 }}
+              initial={{ opacity: 0, y: 20 }}
               animate={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.8 }}
-              className="flex flex-col items-center text-center md:items-start md:text-left space-y-4 md:space-y-6"
+              /* Single Glass Panel:
+     - bg-white/10: Light tint to see the pool colors through
+     - backdrop-blur-xl: High quality frost effect
+     - p-6 to p-12: Responsive padding to keep it compact on mobile
+  */
+              className="relative z-10 p-6 md:p-12 rounded-[2.5rem] md:rounded-[4rem] bg-white/10 backdrop-blur-xl border border-white/20 shadow-2xl flex flex-col items-center text-center md:items-start md:text-left max-w-[95%] md:max-w-4xl"
             >
-              {/* 1. Badge - Glass Finish */}
-              <div className="inline-flex items-center gap-2 px-3 py-1.5 rounded-full bg-white/10 backdrop-blur-xl border border-white/20 text-white font-bold text-[9px] md:text-xs uppercase tracking-[0.2em] shadow-lg">
-                <Waves size={14} className="animate-pulse text-primary-dark" />
-                <span className="drop-shadow-md">Premium Engineering</span>
+              {/* 1. Badge - Simplified (since it's inside the glass already) */}
+              <div className="inline-flex items-center gap-2 px-3 py-1.5 mb-4 md:mb-6 rounded-full bg-white/10 border border-white/20 text-white font-bold text-[9px] md:text-xs uppercase tracking-[0.2em]">
+                <Waves size={14} className="animate-pulse text-cyan-200" />
+                <span className="drop-shadow-sm">Premium Engineering</span>
               </div>
 
-              {/* 2. Heading - Single Line Glass Wrap */}
-              <div className="w-fit max-w-full px-4 py-2 md:px-6 md:py-3 rounded-2xl md:rounded-3xl bg-white/5 backdrop-blur-md border border-white/10 shadow-xl">
-                <h1
-                  style={{ fontFamily: "'Playfair Display', serif" }}
-                  className="text-2xl md:text-6xl lg:text-5xl font-medium text-white leading-tight tracking-tight whitespace-nowrap"
-                >
-                  Pioneering{" "}
-                  <span className="italic text-cyan-100">Water</span>{" "}
-                  Architecture
-                </h1>
-              </div>
+              {/* 2. Heading - Now part of the main glass block */}
+              <h1
+                style={{ fontFamily: "'Playfair Display', serif" }}
+                className="text-2xl md:text-4xl lg:text-5xl font-medium text-white leading-tight tracking-tight whitespace-nowrap mb-3 md:mb-4"
+              >
+                Pioneering <span className="italic text-cyan-200">Water</span>{" "}
+                Architecture
+              </h1>
 
-              {/* 3. Slogan - Separate Glass Line */}
-              <div className="w-fit px-4 py-2 rounded-xl bg-white/5 backdrop-blur-sm border border-white/5">
-                <p className="text-white md:text-slate-100 text-[10px] md:text-lg font-bold md:font-light max-w-sm md:max-w-2xl leading-relaxed">
-                  Crafting luxury swimming pools and commercial aquatic
-                  landscapes
-                </p>
-              </div>
+              {/* 3. Slogan - Clean and sober */}
+              <p className="text-white/90 md:text-slate-100 text-[11px] md:text-xl font-medium md:font-light max-w-sm md:max-w-2xl leading-relaxed mb-8 md:mb-10">
+                Crafting luxury swimming pools and commercial aquatic landscapes
+                with unparalleled engineering precision.
+              </p>
 
-              {/* 4. Action Button - Glass Finish */}
-              <div className="flex justify-center md:justify-start pt-2">
+              {/* 4. Action Button - Glass button inside Glass panel for a "layered" look */}
+              <div className="flex justify-center md:justify-start w-full">
                 <Link
                   to="/free-quote"
-                  className="group relative overflow-hidden bg-white/20 backdrop-blur-lg text-white px-8 py-3.5 md:px-12 md:py-5 rounded-full font-bold text-xs md:text-base transition-all border border-white/30 hover:bg-white/30 flex items-center gap-2 shadow-2xl"
+                  className="group relative overflow-hidden bg-white/20 backdrop-blur-lg text-white px-8 py-3.5 md:px-12 md:py-5 rounded-full font-bold text-xs md:text-base transition-all active:scale-95 flex items-center gap-2 border border-white/30 hover:bg-white/30 shadow-lg"
                 >
                   <span className="relative z-10">Get Free Quote</span>
                   <ArrowRight
