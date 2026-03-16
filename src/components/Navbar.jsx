@@ -2,6 +2,8 @@ import { useState, useEffect } from "react";
 import { Menu, X, ArrowRight } from "lucide-react";
 import { NAV_LINKS } from "../constants/navigation"; // Import the separated menu
 import Container from "./layout/Container";
+import logo from "../../public/logo.png";
+import { Link } from "react-router-dom";
 
 export default function Navbar() {
   const [open, setOpen] = useState(false);
@@ -17,15 +19,15 @@ export default function Navbar() {
     <nav
       className={`fixed top-0 left-0 w-full h-20 md:h-24 transition-all duration-500 border-b z-100 ${
         scrolled
-          ? "bg-white/90 backdrop-blur-xl py-3 border-secondary-light/10 shadow-lg"
-          : "bg-primary-light py-5 border-transparent"
+          ? "bg-white/90 backdrop-blur-xl border-secondary-light/10 shadow-lg"
+          : "bg-primary-light border-transparent"
       }`}
     >
       <Container className="flex items-center justify-between ">
         {/* Logo Section */}
-        <div className="flex items-center gap-4 group cursor-pointer">
+        <Link to="/" className="flex items-center gap-4 group cursor-pointer">
           <img
-            src="/logo.png"
+            src={logo}
             alt="Forest Lakes Logo"
             className="h-12 w-auto object-contain"
           />
@@ -41,16 +43,16 @@ export default function Navbar() {
               <span>Our Creation</span>
             </p>
           </div>
-        </div>
+        </Link>
 
         {/* Desktop Menu */}
         <div className="hidden lg:flex items-center gap-2">
-          <ul className="flex items-center gap-1 mr-5">
+          <ul className="flex items-center gap-1 mr-8">
             {NAV_LINKS.map((link, index) => (
               <li key={index} className="relative group">
                 <a
                   href={link.href}
-                  className="px-2 py-2 text-[12px] font-bold uppercase tracking-[0.15em] text-secondary-dark/70 hover:text-secondary-dark transition-colors"
+                  className="px-3 py-2 text-[12px] font-bold uppercase tracking-[0.15em] text-secondary-dark/70 hover:text-secondary-dark transition-colors"
                 >
                   {link.name}
                 </a>

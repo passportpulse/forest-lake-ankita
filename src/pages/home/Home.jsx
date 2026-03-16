@@ -4,6 +4,8 @@ import WhyChooseUs from "./sections//WhyChooseUs";
 import FeaturedProjects from "./sections//FeaturedProjects";
 import OurProcess from "./sections//OurProcess";
 import FinalCTA from "./sections//FinalCTA";
+import FAQ from "./sections/FAQ";
+import Testimonials from "./sections/Testimonials";
 
 export default function Home() {
   return (
@@ -13,6 +15,8 @@ export default function Home() {
       <WhyChooseUs />
       <FeaturedProjects />
       <OurProcess />
+      <FAQ/>
+      <Testimonials/>
       <FinalCTA />
     </>
   );
