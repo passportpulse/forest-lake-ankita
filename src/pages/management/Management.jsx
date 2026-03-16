@@ -4,36 +4,36 @@ import { Users, Target, Award, TrendingUp, Shield, Clock } from "lucide-react";
 import CommonHeader from "../../components/Header";
 
 export default function Management() {
-  const managementTeam = [
-    {
-      name: "John Anderson",
-      role: "Chief Executive Officer",
-      experience: "20+ years",
-      expertise: "Strategic Planning & Business Development",
-      image: "/team1.jpg"
-    },
-    {
-      name: "Sarah Mitchell",
-      role: "Chief Operations Officer", 
-      experience: "15+ years",
-      expertise: "Project Management & Operations",
-      image: "/team2.jpg"
-    },
-    {
-      name: "Michael Chen",
-      role: "Technical Director",
-      experience: "18+ years", 
-      expertise: "Engineering & Design Solutions",
-      image: "/team3.jpg"
-    },
-    {
-      name: "Emily Rodriguez",
-      role: "Creative Director",
-      experience: "12+ years",
-      expertise: "Landscape Design & Architecture",
-      image: "/team4.jpg"
-    }
-  ];
+  // const managementTeam = [
+  //   {
+  //     name: "John Anderson",
+  //     role: "Chief Executive Officer",
+  //     experience: "20+ years",
+  //     expertise: "Strategic Planning & Business Development",
+  //     image: "/team1.jpg"
+  //   },
+  //   {
+  //     name: "Sarah Mitchell",
+  //     role: "Chief Operations Officer", 
+  //     experience: "15+ years",
+  //     expertise: "Project Management & Operations",
+  //     image: "/team2.jpg"
+  //   },
+  //   {
+  //     name: "Michael Chen",
+  //     role: "Technical Director",
+  //     experience: "18+ years", 
+  //     expertise: "Engineering & Design Solutions",
+  //     image: "/team3.jpg"
+  //   },
+  //   {
+  //     name: "Emily Rodriguez",
+  //     role: "Creative Director",
+  //     experience: "12+ years",
+  //     expertise: "Landscape Design & Architecture",
+  //     image: "/team4.jpg"
+  //   }
+  // ];
 
   const managementValues = [
     {
@@ -76,7 +76,7 @@ export default function Management() {
         title="Management Team"
         subtitle="Meet the visionary leaders behind Forest Lakes - experienced professionals dedicated to excellence in aquatic solutions, landscape design, and project management."
         category="Leadership"
-        image="/management-hero.jpg"
+        image="https://img.staticmb.com/mbcontent/images/crop/uploads/2024/8/Swimming-Pool-Designs_0_1200.jpg.webp"
       />
 
       {/* MANAGEMENT PHILOSOPHY */}
@@ -194,27 +194,27 @@ export default function Management() {
               </div>
             </div>
 
-            <div className="bg-gradient-to-br from-primary-light to-primary-dark rounded-xl p-8 text-white">
+            <div className="bg-linear-to-br from-primary-light to-primary-dark rounded-xl p-8 text-secondary-dark">
               <h3 className="text-xl font-bold mb-6">Leadership Commitment</h3>
               <ul className="space-y-4">
                 <li className="flex items-start gap-3">
-                  <div className="w-2 h-2 bg-white rounded-full mt-2 flex-shrink-0"></div>
+                  <div className="w-2 h-2 bg-secondary-dark rounded-full mt-2 shrink-0"></div>
                   <span className="text-sm">100% project delivery success rate</span>
                 </li>
                 <li className="flex items-start gap-3">
-                  <div className="w-2 h-2 bg-white rounded-full mt-2 flex-shrink-0"></div>
+                  <div className="w-2 h-2 bg-secondary-dark rounded-full mt-2 shrink-0"></div>
                   <span className="text-sm">ISO certified quality management systems</span>
                 </li>
                 <li className="flex items-start gap-3">
-                  <div className="w-2 h-2 bg-white rounded-full mt-2 flex-shrink-0"></div>
+                  <div className="w-2 h-2 bg-secondary-dark rounded-full mt-2 shrink-0"></div>
                   <span className="text-sm">24/7 project oversight and support</span>
                 </li>
                 <li className="flex items-start gap-3">
-                  <div className="w-2 h-2 bg-white rounded-full mt-2 flex-shrink-0"></div>
+                  <div className="w-2 h-2 bg-secondary-dark rounded-full mt-2 shrink-0"></div>
                   <span className="text-sm">Continuous team training and development</span>
                 </li>
                 <li className="flex items-start gap-3">
-                  <div className="w-2 h-2 bg-white rounded-full mt-2 flex-shrink-0"></div>
+                  <div className="w-2 h-2 bg-secondary-dark rounded-full mt-2 shrink-0"></div>
                   <span className="text-sm">Sustainable and environmentally responsible practices</span>
                 </li>
               </ul>
