@@ -3,10 +3,10 @@ import { Link } from "react-router-dom";
 import { ArrowRight } from "lucide-react";
 import Section from "../../../components/layout/Section";
 import Container from "../../../components/layout/Container";
-import pool1 from "../../../assets/pools/1.jpeg";
-import pool2 from "../../../assets/pools/2.jpeg";
-import pool3 from "../../../assets/pools/3.jpeg";
-import pool4 from "../../../assets/pools/5.jpeg";
+import pool1 from "../../../assets/pools/1.webp";
+import pool2 from "../../../assets/pools/2.webp";
+import pool3 from "../../../assets/pools/3.webp";
+import pool4 from "../../../assets/pools/5.webp";
 
 export default function FeaturedProjects() {
   const projects = [pool1, pool2, pool3, pool4];
