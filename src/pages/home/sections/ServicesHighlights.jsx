@@ -62,7 +62,6 @@ const services = [
   },
 ];
 
-
 export default function ServicesHighlights() {
   return (
     <Section className="bg-white py-12 md:py-20">
@@ -70,10 +69,10 @@ export default function ServicesHighlights() {
         {/* Header */}
         <div className="mb-8 px-2 md:px-0 flex justify-between items-end">
           <div>
-            <h2 className="text-2xl md:text-4xl font-bold text-secondary-dark mb-2">
+            <h2 className="text-2xl md:text-4xl font-bold text-secondary-dark mb-3 md:mb-4">
               Expert Services
             </h2>
-            <div className="w-10 h-1 bg-primary-light rounded-full" />
+            <div className="w-12 md:w-16 h-1 bg-primary-dark rounded-full mb-4 md:mb-6" />
           </div>
 
           <Link
@@ -89,13 +88,13 @@ export default function ServicesHighlights() {
           {services.map((service, index) => {
             const Icon = service.icon;
             return (
-              <motion.div 
-                key={index} 
+              <motion.div
+                key={index}
                 initial={{ opacity: 0, y: 20 }}
                 whileInView={{ opacity: 1, y: 0 }}
                 viewport={{ once: true }}
                 transition={{ delay: index * 0.1 }}
-                // min-w-[75%] ensures the next card is partially visible, 
+                // min-w-[75%] ensures the next card is partially visible,
                 // prompting the user to swipe without needing a scrollbar.
                 className="min-w-[75%] md:min-w-full snap-center first:pl-2 last:pr-2 md:first:pl-0 md:last:pr-0"
               >
@@ -107,7 +106,7 @@ export default function ServicesHighlights() {
                     decoding="async"
                     className="absolute inset-0 w-full h-full object-cover transition-transform duration-700 group-hover:scale-110"
                   />
-                  
+
                   <div className="absolute inset-0 bg-gradient-to-t from-secondary-dark/90 via-secondary-dark/20 to-transparent" />
 
                   <div className="absolute inset-0 p-5 flex flex-col justify-end text-white">

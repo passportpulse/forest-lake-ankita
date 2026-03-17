@@ -52,13 +52,13 @@ export default function WhyChooseUs() {
           {/* Text Side - Compact on Mobile */}
           <div className="px-1 md:px-0 order-1 lg:order-2">
             <div className="mb-6 md:mb-10 text-center lg:text-left">
-              <span className="text-primary-dark font-bold text-[10px] uppercase tracking-widest mb-2 block">
+              <span className="text-primary-dark font-bold text-[10px] md:text-sm uppercase tracking-[0.2em] mb-2 md:mb-3">
                 Our Difference
               </span>
-              <h2 className="text-2xl md:text-4xl font-bold text-secondary-dark mb-2">
+              <h2 className="text-2xl md:text-4xl font-bold text-secondary-dark mb-3 md:mb-4">
                 Why Choose Us
               </h2>
-              <div className="w-12 h-1 bg-primary-light rounded-full mx-auto lg:mx-0" />
+              <div className="w-12 md:w-16 h-1 bg-primary-dark rounded-full mb-4 md:mb-6 mx-auto lg:mx-0" />
             </div>
 
             {/* Features - 2x2 Grid on Mobile */}

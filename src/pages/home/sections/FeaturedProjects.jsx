@@ -17,14 +17,14 @@ export default function FeaturedProjects() {
         {/* Header - Consistent with Why Choose Us */}
         <div className="flex flex-col md:flex-row md:items-end justify-between mb-8 md:mb-12 px-2 md:px-0 gap-4">
           <div>
-            <h2 className="text-2xl md:text-4xl font-bold text-secondary-dark mb-2">
+            <h2 className="text-2xl md:text-4xl font-bold text-secondary-dark mb-3 md:mb-4">
               Featured Projects
             </h2>
-            <div className="w-12 h-1 bg-primary-dark rounded-full" />
+            <div className="w-12 md:w-16 h-1 bg-primary-dark rounded-full mb-4 md:mb-6" />
           </div>
           <p className="text-slate-600 text-sm md:text-base max-w-md">
-            Explore some of our recent luxury swimming pool and 
-            commercial water park installations.
+            Explore some of our recent luxury swimming pool and commercial water
+            park installations.
           </p>
         </div>
 
@@ -41,7 +41,7 @@ export default function FeaturedProjects() {
                 alt={`Project ${i + 1}`}
                 className="h-40 sm:h-50 md:h-70 w-full object-cover group-hover:scale-110 transition duration-700"
               />
-              
+
               {/* Subtle Overlay on Hover */}
               <div className="absolute inset-0 bg-secondary-dark/20 opacity-0 group-hover:opacity-100 transition-opacity duration-300" />
             </div>
@@ -55,7 +55,10 @@ export default function FeaturedProjects() {
             className="flex items-center gap-2 bg-secondary-dark text-white px-5 py-2.5 rounded-full text-sm font-semibold shadow-md active:scale-95 transition-transform"
           >
             View All Projects
-            <ArrowRight size={18} className="group-hover:translate-x-1 transition-transform" />
+            <ArrowRight
+              size={18}
+              className="group-hover:translate-x-1 transition-transform"
+            />
           </Link>
         </div>
       </Container>

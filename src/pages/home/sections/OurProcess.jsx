@@ -26,13 +26,13 @@ export default function OurProcess() {
       <Container>
         {/* Centered Heading Style */}
         <div className="flex flex-col items-center text-center mb-12 md:mb-20 px-4">
-          <span className="text-primary-dark font-bold text-xs md:text-sm uppercase tracking-[0.2em] mb-3">
+          <span className="text-primary-dark font-bold text-[10px] md:text-sm uppercase tracking-[0.2em] mb-2 md:mb-3">
             How We Work
           </span>
-          <h2 className="text-2xl md:text-4xl font-bold text-secondary-dark mb-4">
+          <h2 className="text-2xl md:text-4xl font-bold text-secondary-dark mb-3 md:mb-4">
             Our Process
           </h2>
-          <div className="w-16 h-1 bg-primary-dark rounded-full mb-6" />
+          <div className="w-12 md:w-16 h-1 bg-primary-dark rounded-full mb-4 md:mb-6" />
           <p className="text-slate-600 text-sm md:text-base max-w-2xl mx-auto leading-relaxed">
             A structured workflow to ensure quality, safety, and efficiency 
             in every luxury swimming pool and commercial installation.

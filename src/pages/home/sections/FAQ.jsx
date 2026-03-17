@@ -31,13 +31,13 @@ export default function FAQ() {
       <Container>
         {/* Centered Header - Matches Process Section */}
         <div className="flex flex-col items-center text-center mb-12 md:mb-16 px-4">
-          <span className="text-primary-dark font-bold text-xs md:text-sm uppercase tracking-[0.2em] mb-3">
+          <span className="text-primary-dark font-bold text-[10px] md:text-sm uppercase tracking-[0.2em] mb-2 md:mb-3">
             Got Questions?
           </span>
-          <h2 className="text-2xl md:text-4xl font-bold text-secondary-dark mb-4">
+          <h2 className="text-2xl md:text-4xl font-bold text-secondary-dark mb-3 md:mb-4">
             Frequently Asked Questions
           </h2>
-          <div className="w-16 h-1 bg-primary-dark rounded-full" />
+          <div className="w-12 md:w-16 h-1 bg-primary-dark rounded-full mb-4 md:mb-6" />
         </div>
 
         {/* FAQ Accordion - Compact Design */}
